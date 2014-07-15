@@ -1864,11 +1864,12 @@ design rules under a new name.</description>
 <contactref element="U1" pad="RING"/>
 <contactref element="OPENMOTE" pad="20"/>
 <via x="39.0525" y="4.1275" extent="1-16" drill="0.6"/>
-<wire x1="20.4225" y1="1.7" x2="38.53" y2="1.7" width="0.6096" layer="16"/>
-<wire x1="38.53" y1="1.7" x2="39.0525" y2="2.2225" width="0.6096" layer="16"/>
+<wire x1="38.1" y1="1.27" x2="39.0525" y2="2.2225" width="0.6096" layer="16"/>
 <wire x1="39.0525" y1="4.1275" x2="39.0525" y2="3.7075" width="0.6096" layer="1"/>
 <wire x1="39.0525" y1="3.7075" x2="39.095" y2="3.665" width="0.6096" layer="1"/>
 <wire x1="39.0525" y1="2.2225" x2="39.0525" y2="4.1275" width="0.6096" layer="16"/>
+<wire x1="38.1" y1="1.27" x2="20.8525" y2="1.27" width="0.6096" layer="16"/>
+<wire x1="20.8525" y1="1.27" x2="20.4225" y2="1.7" width="0.6096" layer="16"/>
 </signal>
 <signal name="AN-IN-4-20MA-1">
 <contactref element="U3" pad="RING"/>

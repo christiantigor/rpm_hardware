@@ -1837,7 +1837,7 @@ design rules under a new name.</description>
 <via x="6.985" y="6.35" extent="1-16" drill="0.6"/>
 <wire x1="11.43" y1="6.35" x2="6.985" y2="6.35" width="1.4224" layer="1"/>
 <wire x1="6.985" y1="10.16" x2="6.985" y2="6.35" width="1.4224" layer="16"/>
-<wire x1="6.985" y1="10.16" x2="7.0875" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="6.985" y1="10.16" x2="7.0875" y2="10.16" width="0.6096" layer="1"/>
 </signal>
 <signal name="DIG-IO-1">
 <contactref element="U2" pad="RING"/>
