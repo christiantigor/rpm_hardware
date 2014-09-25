@@ -11687,7 +11687,6 @@ unfilled</description>
 </classes>
 <parts>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="R470"/>
-<part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="R10K"/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="U2" library="powercube" deviceset="ADE7753" device=""/>
@@ -11774,6 +11773,7 @@ unfilled</description>
 <part name="XB1" library="maxstream" deviceset="XBEE" device="-PRO"/>
 <part name="D4" library="semicon-smd-ipc" deviceset="D-" device="SOD-80" value="1N4148"/>
 <part name="L5" library="resistor" deviceset="L-EU" device="L3216C" value="BLM31PG330SN1"/>
+<part name="LED2" library="adafruit" deviceset="LED" device="3MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -11790,7 +11790,6 @@ unfilled</description>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="106.68" y="109.22" rot="R270"/>
-<instance part="LED1" gate="G$1" x="106.68" y="99.06"/>
 <instance part="R2" gate="G$1" x="137.16" y="99.06" rot="R270"/>
 <instance part="S1" gate="1" x="127" y="109.22" rot="R270"/>
 <instance part="U2" gate="G$1" x="248.92" y="106.68"/>
@@ -11860,7 +11859,8 @@ unfilled</description>
 <instance part="JP3" gate="A" x="60.96" y="104.14" rot="R180"/>
 <instance part="XB1" gate="G$1" x="-10.16" y="66.04"/>
 <instance part="D4" gate="G$1" x="-15.24" y="-93.98" rot="R90"/>
-<instance part="L5" gate="G$1" x="175.26" y="-58.42" rot="R90"/>
+<instance part="L5" gate="G$1" x="175.26" y="-55.88" rot="R90"/>
+<instance part="LED2" gate="G$1" x="106.68" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -11961,10 +11961,10 @@ unfilled</description>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <label x="187.96" y="-83.82" size="1.778" layer="95"/>
-<wire x1="187.96" y1="-45.72" x2="187.96" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-58.42" x2="187.96" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-45.72" x2="187.96" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-55.88" x2="187.96" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="L5" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="-58.42" x2="187.96" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-55.88" x2="187.96" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -12044,23 +12044,16 @@ unfilled</description>
 <label x="93.98" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="104.14" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RELAY_LED" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="106.68" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
-<label x="93.98" y="91.44" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PWM0/RSSI"/>
 <wire x1="99.06" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 <label x="83.82" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="106.68" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<label x="104.14" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USER_RELAY_CTRL" class="0">
@@ -12215,9 +12208,9 @@ unfilled</description>
 <wire x1="228.6" y1="55.88" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AD4/DIO4"/>
-<wire x1="147.32" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<label x="149.86" y="48.26" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="AD3/DIO3"/>
+<wire x1="147.32" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
+<label x="149.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -12228,9 +12221,9 @@ unfilled</description>
 <wire x1="228.6" y1="50.8" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="ASC/AD5/DIO5"/>
-<wire x1="147.32" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<label x="149.86" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="CTS/DIO7"/>
+<wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<label x="149.86" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -12241,9 +12234,9 @@ unfilled</description>
 <wire x1="228.6" y1="48.26" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AD3/DIO3"/>
-<wire x1="147.32" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
-<label x="149.86" y="63.5" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="AD4/DIO4"/>
+<wire x1="147.32" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
+<label x="149.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_5V" class="0">
@@ -12364,9 +12357,9 @@ unfilled</description>
 <wire x1="228.6" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CTS/DIO7"/>
-<wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<label x="149.86" y="50.8" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="ASC/AD5/DIO5"/>
+<wire x1="147.32" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
+<label x="149.86" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WALL_NEUTRAL" class="0">
@@ -12387,8 +12380,8 @@ unfilled</description>
 </segment>
 <segment>
 <pinref part="L5" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="-58.42" x2="167.64" y2="-58.42" width="0.1524" layer="91"/>
-<label x="149.86" y="-60.96" size="1.778" layer="95"/>
+<wire x1="170.18" y1="-55.88" x2="167.64" y2="-55.88" width="0.1524" layer="91"/>
+<label x="149.86" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOAD_NEUTRAL" class="0">
@@ -12641,6 +12634,13 @@ unfilled</description>
 <wire x1="-15.24" y1="-99.06" x2="-15.24" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="K1" gate="G$1" pin="4"/>
 <wire x1="-12.7" y1="-96.52" x2="-15.24" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="106.68" y1="104.14" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

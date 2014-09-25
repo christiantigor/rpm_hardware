@@ -11074,9 +11074,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="228.6" y1="55.88" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AD3/DIO3"/>
-<wire x1="147.32" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
-<label x="149.86" y="63.5" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="AD4/DIO4"/>
+<wire x1="147.32" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
+<label x="149.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -11087,9 +11087,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="228.6" y1="50.8" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AD4/DIO4"/>
-<wire x1="147.32" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<label x="149.86" y="48.26" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="ASC/AD5/DIO5"/>
+<wire x1="147.32" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
+<label x="149.86" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11100,9 +11100,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="228.6" y1="48.26" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CTS/DIO7"/>
-<wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<label x="149.86" y="50.8" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="AD3/DIO3"/>
+<wire x1="147.32" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
+<label x="149.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_5V" class="0">
@@ -11223,9 +11223,9 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="228.6" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="ASC/AD5/DIO5"/>
-<wire x1="147.32" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<label x="149.86" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="CTS/DIO7"/>
+<wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<label x="149.86" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WALL_NEUTRAL" class="0">
