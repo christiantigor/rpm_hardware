@@ -11147,26 +11147,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49S" value="3.579545MHz"/>
 <part name="C13" library="resistor" deviceset="C-EU" device="C0805" value="C22pF"/>
 <part name="C14" library="resistor" deviceset="C-EU" device="C0805" value="C22pF"/>
-<part name="TP_ADE_IRQ" library="testpad" deviceset="PTR1" device="PAD1-13"/>
-<part name="TP_ADE_ZX" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
-<part name="TP_ADE_CF" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
 <part name="U3" library="adafruit" deviceset="TXB0104PWR" device=""/>
-<part name="TP_ADE_CS" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
-<part name="TP_SCK" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
-<part name="TP_MISO" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
-<part name="TP_MOSI" library="testpad" deviceset="PTR1" device="PAD1-13">
-<attribute name="TP_SIGNAL_NAME" value=""/>
-</part>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R2512" value="R0.001"/>
 <part name="D2" library="powercube" deviceset="SMAJ_TVS" device=""/>
 <part name="L2" library="powercube" deviceset="EMI_SUPRESSION_FERRITE_BEAD" device=""/>
@@ -11207,6 +11188,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <part name="IC2" library="v-reg" deviceset="LD117A?*" device="S" technology="50TR"/>
 <part name="C18" library="resistor" deviceset="C-EU" device="C0805" value="C10uF"/>
 <part name="C19" library="resistor" deviceset="C-EU" device="C0805" value="C10uF"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="R10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -11252,14 +11234,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="Q2" gate="G$1" x="370.84" y="200.66" rot="R90"/>
 <instance part="C13" gate="G$1" x="378.46" y="205.74" rot="R90"/>
 <instance part="C14" gate="G$1" x="378.46" y="195.58" rot="R90"/>
-<instance part="TP_ADE_IRQ" gate="G$1" x="363.22" y="185.42" rot="R180"/>
-<instance part="TP_ADE_ZX" gate="G$1" x="370.84" y="185.42" rot="R180"/>
-<instance part="TP_ADE_CF" gate="G$1" x="378.46" y="185.42" rot="R180"/>
 <instance part="U3" gate="G$1" x="327.66" y="144.78"/>
-<instance part="TP_ADE_CS" gate="G$1" x="271.78" y="147.32" rot="R180"/>
-<instance part="TP_SCK" gate="G$1" x="279.4" y="147.32" rot="R180"/>
-<instance part="TP_MISO" gate="G$1" x="287.02" y="147.32" rot="R180"/>
-<instance part="TP_MOSI" gate="G$1" x="294.64" y="147.32" rot="R180"/>
 <instance part="R11" gate="G$1" x="317.5" y="106.68"/>
 <instance part="D2" gate="G$1" x="312.42" y="66.04" rot="R90"/>
 <instance part="L2" gate="G$1" x="335.28" y="96.52"/>
@@ -11292,6 +11267,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <instance part="IC2" gate="G$1" x="55.88" y="134.62"/>
 <instance part="C18" gate="G$1" x="45.72" y="129.54"/>
 <instance part="C19" gate="G$1" x="66.04" y="129.54"/>
+<instance part="R7" gate="G$1" x="365.76" y="187.96" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11662,6 +11638,11 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="66.04" y1="132.08" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
 <label x="68.58" y="134.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="365.76" y1="193.04" x2="368.3" y2="193.04" width="0.1524" layer="91"/>
+<label x="368.3" y="193.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TXO" class="0">
 <segment>
@@ -11698,11 +11679,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
 <label x="302.26" y="139.7" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="TP_MOSI" gate="G$1" pin="TP"/>
-<wire x1="294.64" y1="144.78" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
-<label x="294.64" y="137.16" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -11714,11 +11690,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <pinref part="U3" gate="G$1" pin="A3"/>
 <wire x1="312.42" y1="142.24" x2="309.88" y2="142.24" width="0.1524" layer="91"/>
 <label x="302.26" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TP_MISO" gate="G$1" pin="TP"/>
-<wire x1="287.02" y1="144.78" x2="287.02" y2="137.16" width="0.1524" layer="91"/>
-<label x="287.02" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -11732,11 +11703,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <label x="304.8" y="144.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="TP_SCK" gate="G$1" pin="TP"/>
-<wire x1="279.4" y1="144.78" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
-<label x="279.4" y="137.16" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="ADE_CS" class="0">
 <segment>
@@ -11748,11 +11714,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <pinref part="U3" gate="G$1" pin="A1"/>
 <wire x1="312.42" y1="147.32" x2="309.88" y2="147.32" width="0.1524" layer="91"/>
 <label x="299.72" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TP_ADE_CS" gate="G$1" pin="TP"/>
-<wire x1="271.78" y1="144.78" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
-<label x="271.78" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="USER_RELAY_CTRL" class="0">
@@ -11938,14 +11899,14 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <label x="347.98" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP_ADE_IRQ" gate="G$1" pin="TP"/>
-<wire x1="363.22" y1="182.88" x2="363.22" y2="175.26" width="0.1524" layer="91"/>
-<label x="363.22" y="172.72" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$1" gate="G$1" pin="*3"/>
+<wire x1="205.74" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
+<label x="190.5" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A1"/>
-<wire x1="228.6" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
-<label x="231.14" y="170.18" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="365.76" y1="182.88" x2="368.3" y2="182.88" width="0.1524" layer="91"/>
+<label x="368.3" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADE_ZX" class="0">
@@ -11955,14 +11916,9 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <label x="347.98" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP_ADE_ZX" gate="G$1" pin="TP"/>
-<wire x1="370.84" y1="182.88" x2="370.84" y2="175.26" width="0.1524" layer="91"/>
-<label x="370.84" y="172.72" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="A2"/>
-<wire x1="228.6" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
-<label x="231.14" y="172.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="205.74" y1="170.18" x2="203.2" y2="170.18" width="0.1524" layer="91"/>
+<label x="190.5" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADE_CF" class="0">
@@ -11972,14 +11928,9 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <label x="347.98" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP_ADE_CF" gate="G$1" pin="TP"/>
-<wire x1="378.46" y1="182.88" x2="378.46" y2="175.26" width="0.1524" layer="91"/>
-<label x="378.46" y="172.72" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="A3"/>
-<wire x1="228.6" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
-<label x="231.14" y="175.26" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="*5"/>
+<wire x1="205.74" y1="167.64" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
+<label x="190.5" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOAD_NEUTRAL" class="0">
@@ -12058,9 +12009,9 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <label x="215.9" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="*3"/>
-<wire x1="205.74" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
-<label x="185.42" y="172.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="228.6" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
+<label x="231.14" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -12072,26 +12023,26 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </net>
 <net name="DBG_TXO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="4"/>
-<wire x1="205.74" y1="170.18" x2="203.2" y2="170.18" width="0.1524" layer="91"/>
-<label x="190.5" y="170.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="180.34" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
 <label x="162.56" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A2"/>
+<wire x1="228.6" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
+<label x="231.14" y="172.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DBG_RXI" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="*5"/>
-<wire x1="205.74" y1="167.64" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
-<label x="190.5" y="167.64" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="180.34" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
 <label x="162.56" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A3"/>
+<wire x1="228.6" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
+<label x="231.14" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
