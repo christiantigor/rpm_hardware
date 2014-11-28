@@ -18848,7 +18848,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="TP_GND" gate="G$1" pin="TP"/>
 <wire x1="332.74" y1="157.48" x2="330.2" y2="157.48" width="0.1524" layer="91"/>
-<label x="325.12" y="157.48" size="1.778" layer="95"/>
+<label x="327.66" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">

@@ -18639,7 +18639,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="R1K"/>
 <part name="L1" library="resistor" deviceset="L-EU" device="L3216C" value="BLM31PG330SN1"/>
 <part name="U$2" library="tigorcustom" deviceset="L0603" device="" value="BLM18BB151SN1"/>
-<part name="C3" library="resistor" deviceset="CPOL-EU" device="140CLH-1010"/>
+<part name="C3" library="resistor" deviceset="CPOL-EU" device="140CLH-0810"/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="R0805" value="R470K"/>
 <part name="R22" library="resistor" deviceset="R-EU_" device="R0805" value="R470K"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="R470K"/>

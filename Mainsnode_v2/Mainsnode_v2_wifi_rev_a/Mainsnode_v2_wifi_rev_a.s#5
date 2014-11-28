@@ -18636,12 +18636,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="R470K"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="R470K"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="C10uF"/>
-<part name="R19" library="resistor-power" deviceset="R" device="KH208-8R" value="R0.22W5">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="R1K"/>
 <part name="L1" library="resistor" deviceset="L-EU" device="L3216C" value="BLM31PG330SN1"/>
 <part name="U$2" library="tigorcustom" deviceset="L0603" device="" value="BLM18BB151SN1"/>
@@ -18668,6 +18662,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X12" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X12" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X7" device=""/>
+<part name="R1" library="resistor-power" deviceset="R" device="KH206-8" value="R0.22W5"/>
 </parts>
 <sheets>
 <sheet>
@@ -18707,7 +18702,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="R10" gate="G$1" x="345.44" y="215.9" rot="R90"/>
 <instance part="R11" gate="G$1" x="345.44" y="203.2" rot="R90"/>
 <instance part="C2" gate="G$1" x="353.06" y="203.2"/>
-<instance part="R19" gate="G$1" x="368.3" y="200.66" rot="R270"/>
 <instance part="R21" gate="G$1" x="337.82" y="208.28" rot="R180"/>
 <instance part="L1" gate="G$1" x="271.78" y="213.36"/>
 <instance part="U$2" gate="G$1" x="360.68" y="208.28" rot="R90"/>
@@ -18728,6 +18722,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="JP1" gate="G$1" x="236.22" y="63.5"/>
 <instance part="JP3" gate="G$1" x="246.38" y="63.5"/>
 <instance part="JP5" gate="A" x="256.54" y="68.58"/>
+<instance part="R1" gate="G$1" x="368.3" y="200.66" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -18776,10 +18771,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="83.82" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R19" gate="G$1" pin="2"/>
 <label x="370.84" y="193.04" size="1.778" layer="95"/>
 <wire x1="368.3" y1="195.58" x2="368.3" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="193.04" x2="370.84" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -18949,10 +18944,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 <wire x1="365.76" y1="208.28" x2="368.3" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="368.3" y1="208.28" x2="368.3" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="208.28" x2="370.84" y2="208.28" width="0.1524" layer="91"/>
 <label x="370.84" y="208.28" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LOAD_PHASE" class="0">

@@ -353,7 +353,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.3.0/lbr/SparkFun-Eagle-Libraries-mas
 [Win_1]
 Type="Control Panel"
 Loc="375 165 974 564"
-State=2
+State=0
 Number=0
 
 [Win_2]
@@ -361,8 +361,8 @@ Type="Schematic Editor"
 Loc="375 165 974 564"
 State=1
 Number=1
-File="Mainsnode_v2_wifi.sch"
-View="139.441 123.416 365.222 265.025"
+File="C:/Users/tritronik/Documents/GitHub/rpm_hardware/Mainsnode_v2/Mainsnode_v2_wifi_rev_a/Mainsnode_v2_wifi_rev_a.sch"
+View="71.4683 11.5574 515.045 249.344"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -394,7 +394,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: 139.441 123.416 365.222 265.025"
+Views=" 1: 71.4683 11.5574 515.045 249.344"
 Sheet=1
 
 [Win_3]
@@ -402,9 +402,9 @@ Type="Board Editor"
 Loc="375 165 974 564"
 State=1
 Number=2
-File="Mainsnode_v2_wifi.brd"
-View="20.5519 39.1591 27.6377 44.3535"
-WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
+File="C:/Users/tritronik/Documents/GitHub/rpm_hardware/Mainsnode_v2/Mainsnode_v2_wifi_rev_a/Mainsnode_v2_wifi_rev_a.brd"
+View="14.772 -18.3006 126.157 56.3239"
+WireWidths=" 0 0.254 0.3048 0.6096 1.016 1.27 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.8128 1.4224"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -434,7 +434,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=16
+Layer=1
 
 [Desktop]
 Screen="1366 768"

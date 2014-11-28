@@ -18663,6 +18663,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X12" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X7" device=""/>
 <part name="R1" library="resistor-power" deviceset="R" device="KH206-8" value="R0.22W5"/>
+<part name="TP_GND" library="testpad" deviceset="PTR1" device="PAD1-13">
+<attribute name="TP_SIGNAL_NAME" value=""/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -18723,6 +18726,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="JP3" gate="G$1" x="246.38" y="63.5"/>
 <instance part="JP5" gate="A" x="256.54" y="68.58"/>
 <instance part="R1" gate="G$1" x="368.3" y="200.66" rot="R270"/>
+<instance part="TP_GND" gate="G$1" x="335.28" y="157.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -18840,6 +18844,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="279.4" y1="144.78" x2="271.78" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="144.78" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="269.24" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TP_GND" gate="G$1" pin="TP"/>
+<wire x1="332.74" y1="157.48" x2="330.2" y2="157.48" width="0.1524" layer="91"/>
+<label x="325.12" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
